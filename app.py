@@ -327,16 +327,22 @@ def home():
                         <div class="cert-card">
                             <img src="/static/Certs/WEBSITE_UIUX_DESIGNER.pdf" alt="WEBSITE_UIUX_DESIGNER">
                             <h4>WEBSITE_UIUX_DESIGNER</h4>
+                        </div>
+                    </a>
                             
                     <a href="/static/Certs/BCG_internship_completion_certificate.pdf" target="_blank">
                         <div class="cert-card">
                             <img src="/static/Certs/BCG_internship_completion_certificate.pdf" alt="BCG_internship_completion_certificate">
                             <h4>BCG_internship_completion_certificate</h4>
+                        </div>
+                    </a>
                             
                     <a href="/static/Certs/British_Airways_Data_Science_Internship.pdf" target="_blank">
                         <div class="cert-card">
                             <img src="/static/Certs/British_Airways_Data_Science_Internship.pdf" alt="British_Airways_Data_Science_Internship">
                             <h4>British_Airways_Data_Science_Internship</h4>
+                        </div>
+                    </a>
                             
                     <a href="/static/Certs/PYTHON_PROGRAMMER1.pdf" target="_blank">
                         <div class="cert-card">
