@@ -78,15 +78,18 @@ def home():
                 border: 1px solid #ddd;
                 border-radius: 10px;
                 overflow: hidden;
-                transition: transform 0.3s ease;
                 background: white;
+                transition: transform 0.3s ease;
+                text-align: center;
             }
             .cert-card:hover {
                 transform: scale(1.02);
             }
-            .cert-card img {
+            .cert-card iframe {
                 width: 100%;
-                height: auto;
+                height: 200px;
+                border: none;
+                background: #fff;
             }
             .cert-card h4 {
                 padding: 10px;
@@ -94,7 +97,15 @@ def home():
                 font-size: 16px;
                 background: #3498db;
                 color: white;
-                text-align: center;
+            }
+            .cv-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background: #2ecc71;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
             }
         </style>
     </head>
@@ -168,186 +179,187 @@ def home():
             <!-- CERTIFICATIONS SECTION -->
             <div class="section">
                 <h2>📜 Certifications</h2>
+                <p>Click any certificate to view or download the full PDF.</p>
                 <div class="cert-grid">
                     <a href="/static/Certs/Advanced_Data_Mining_projects_with_R.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/Advanced_Data_Mining_projects_with_R.pdf" alt="Advanced_Data_Mining_Projects_with_R">
-                            <h4>Advanced_Data_Mining_with_R</h4>
+                            <iframe src="/static/Certs/Advanced_Data_Mining_projects_with_R.pdf#view=FitH"></iframe>
+                            <h4>Advanced Data Mining with R</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/Advanced_SQL_Programming.pdf" target="_blank">
-            <div class="cert-card">
-                <img src="/static/Certs/Advanced_SQL_Programming.pdf" alt="Advanced_SQL_Programming">
-                <h4>Advanced_SQL_Programming</h4>
-            </div>
+                        <div class="cert-card">
+                            <iframe src="/static/Certs/Advanced_SQL_Programming.pdf#view=FitH"></iframe>
+                            <h4>Advanced SQL Programming</h4>
+                        </div>
                     </a>
-                    
+
                     <a href="/static/Certs/AFFILIATE_MARKETER.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/AFFILIATE_MARKETER.pdf" alt="Affiliate_Marketer">
-                            <h4>Affiliate_Marketer</h4>
+                            <iframe src="/static/Certs/AFFILIATE_MARKETER.pdf#view=FitH"></iframe>
+                            <h4>Affiliate Marketer</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/AI_AND_APPLICATIONS.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/AI_AND_APPLICATIONS.pdf" alt="AI_AND_APPLICATIONS">
-                            <h4>AI_AND_APPLICATIONS</h4>
+                            <iframe src="/static/Certs/AI_AND_APPLICATIONS.pdf#view=FitH"></iframe>
+                            <h4>AI AND APPLICATIONS</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/App_creation_with_Flutter_and_Dart.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/App_creation_with_Flutter_and_Dart.pdf" alt="App_creation_with_Flutter_and_Dart">
-                            <h4>App_creation_with_Flutter_and_Dart</h4>
+                            <iframe src="/static/Certs/App_creation_with_Flutter_and_Dart.pdf#view=FitH"></iframe>
+                            <h4>App Creation with Flutter and Dart</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/BUSINESS_ANALSYT.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/BUSINESS_ANALSYT.pdf" alt="BUSINESS_ANALSYT">
-                            <h4>BUSINESS_ANALSYT</h4>
+                            <iframe src="/static/Certs/BUSINESS_ANALSYT.pdf#view=FitH"></iframe>
+                            <h4>BUSINESS ANALSYT</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/CLOUD_COMPUTING.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/CLOUD_COMPUTING.pdf" alt="CLOUD_COMPUTING">
-                            <h4>CLOUD_COMPUTING</h4>
+                            <iframe src="/static/Certs/CLOUD_COMPUTING.pdf#view=FitH"></iframe>
+                            <h4>CLOUD COMPUTING</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/Data_Analysis_with_R.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/Data_Analysis_with_R.pdf" alt="Data_Analysis_with_R">
-                            <h4>Data_Analysis_with_R</h4>
+                            <iframe src="/static/Certs/Data_Analysis_with_R.pdf#view=FitH"></iframe>
+                            <h4>Data Analysis with R</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DATA_MANAGEMENT_AND_ANALYSIS_CRA.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DATA_MANAGEMENT_AND_ANALYSIS_CRA.pdf" alt="DATA_MANAGEMENT_AND_ANALYSIS_CRA">
-                            <h4>DATA_MANAGEMENT_AND_ANALYSIS_CRA</h4>
+                            <iframe src="/static/Certs/DATA_MANAGEMENT_AND_ANALYSIS_CRA.pdf#view=FitH"></iframe>
+                            <h4>Data Management and Analysis (CRA)</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DATA_MANAGEMENT_AND_ANALYSIS.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DATA_MANAGEMENT_AND_ANALYSIS.pdf" alt="DATA_MANAGEMENT_AND_ANALYSIS">
-                            <h4>DATA_MANAGEMENT_AND_ANALYSIS</h4>
+                            <iframe src="/static/Certs/DATA_MANAGEMENT_AND_ANALYSIS.pdf#view=FitH"></iframe>
+                            <h4>Data Management and Analysis</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DATA_MINING.ML.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DATA_MINING.ML.pdf" alt="DATA_MINING.ML">
-                            <h4>DATA_MINING.ML</h4>
+                            <iframe src="/static/Certs/DATA_MINING.ML.pdf#view=FitH"></iframe>
+                            <h4>Data Mining and ML</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DEEP_LEARNING.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DEEP_LEARNING.pdf" alt="DEEP_LEARNING">
-                            <h4>DEEP_LEARNING</h4>
+                            <iframe src="/static/Certs/DEEP_LEARNING.pdf#view=FitH"></iframe>
+                            <h4>Deep Learning</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DEVOPS.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DEVOPS.pdf" alt="DevOps">
+                            <iframe src="/static/Certs/DEVOPS.pdf#view=FitH"></iframe>
                             <h4>DevOps</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DIGITAL_LEADERSHIP.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DIGITAL_LEADERSHIP.pdf" alt="DIGITAL_LEADERSHIP">
-                            <h4>DIGITAL_LEADERSHIP</h4>
+                            <iframe src="/static/Certs/DIGITAL_LEADERSHIP.pdf#view=FitH"></iframe>
+                            <h4>Digital Leadership</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/DIGITAL_LITERACY.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/DIGITAL_LITERACY.pdf" alt="DIGITAL_LITERACY">
-                            <h4>DIGITAL_LITERACY</h4>
+                            <iframe src="/static/Certs/DIGITAL_LITERACY.pdf#view=FitH"></iframe>
+                            <h4>Digital Literacy</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/Java_deep_learning.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/Java_deep_learning.pdf" alt="Java_deep_learning">
-                            <h4>Java_deep_learning</h4>
+                            <iframe src="/static/Certs/Java_deep_learning.pdf#view=FitH"></iframe>
+                            <h4>Java Deep Learning</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/MACHINE_LEARNER.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/MACHINE_LEARNER.pdf" alt="MACHINE_LEARNER">
-                            <h4>MACHINE_LEARNER</h4>
+                            <iframe src="/static/Certs/MACHINE_LEARNER.pdf#view=FitH"></iframe>
+                            <h4>Machine Learner</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/Machine_Learning_and_Deep_with_R.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/Machine_Learning_and_Deep_with_R.pdf" alt="Machine_Learning_and_Deep_with_R">
-                            <h4>Machine_Learning_and_Deep_with_R</h4>
+                            <iframe src="/static/Certs/Machine_Learning_and_Deep_with_R.pdf#view=FitH"></iframe>
+                            <h4>ML & DL with R</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/MongoDB.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/MongoDB.pdf" alt="MongoDB Certification">
+                            <iframe src="/static/Certs/MongoDB.pdf#view=FitH"></iframe>
                             <h4>MongoDB</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/ONYEDIKACHI_ONWURAH_Python.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/ONYEDIKACHI_ONWURAH_Python.pdf" alt="ONYEDIKACHI_ONWURAH_Python">
-                            <h4>ONYEDIKACHI_ONWURAH_Python</h4>
+                            <iframe src="/static/Certs/ONYEDIKACHI_ONWURAH_Python.pdf#view=FitH"></iframe>
+                            <h4>Python Programmer</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/Real_world_python_deep_learning.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/Real_world_python_deep_learning.pdf" alt="Real_world_python_deep_learning">
-                            <h4>Real_world_python_deep_learning</h4>
+                            <iframe src="/static/Certs/Real_world_python_deep_learning.pdf#view=FitH"></iframe>
+                            <h4>Real World Python DL</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/SQL_aggregate_functions_fundamentals.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/SQL_aggregate_functions_fundamentals.pdf" alt="SQL_aggregate_functions_fundamentals">
-                            <h4>SQL_aggregate_functions_fundamentals</h4>
+                            <iframe src="/static/Certs/SQL_aggregate_functions_fundamentals.pdf#view=FitH"></iframe>
+                            <h4>SQL Aggregate Functions</h4>
                         </div>
                     </a>
-                    
+
                     <a href="/static/Certs/WEBSITE_UIUX_DESIGNER.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/WEBSITE_UIUX_DESIGNER.pdf" alt="WEBSITE_UIUX_DESIGNER">
-                            <h4>WEBSITE_UIUX_DESIGNER</h4>
+                            <iframe src="/static/Certs/WEBSITE_UIUX_DESIGNER.pdf#view=FitH"></iframe>
+                            <h4>Website UI/UX Designer</h4>
                         </div>
                     </a>
-                            
+
                     <a href="/static/Certs/BCG_internship_completion_certificate.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/BCG_internship_completion_certificate.pdf" alt="BCG_internship_completion_certificate">
-                            <h4>BCG_internship_completion_certificate</h4>
+                            <iframe src="/static/Certs/BCG_internship_completion_certificate.pdf#view=FitH"></iframe>
+                            <h4>BCG Internship Completion</h4>
                         </div>
                     </a>
-                            
+
                     <a href="/static/Certs/British_Airways_Data_Science_Internship.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/British_Airways_Data_Science_Internship.pdf" alt="British_Airways_Data_Science_Internship">
-                            <h4>British_Airways_Data_Science_Internship</h4>
+                            <iframe src="/static/Certs/British_Airways_Data_Science_Internship.pdf#view=FitH"></iframe>
+                            <h4>British Airways DS Internship</h4>
                         </div>
                     </a>
-                            
+
                     <a href="/static/Certs/PYTHON_PROGRAMMER1.pdf" target="_blank">
                         <div class="cert-card">
-                            <img src="/static/Certs/PYTHON_PROGRAMMER1.pdf" alt="PYTHON_PROGRAMMER1">
-                            <h4PYTHON_PROGRAMMER1</h4>
+                            <iframe src="/static/Certs/PYTHON_PROGRAMMER1.pdf#view=FitH"></iframe>
+                            <h4>Python Programmer</h4>
                         </div>
                     </a>
                 </div>
@@ -358,9 +370,7 @@ def home():
                 <h2>📄 Download My CV</h2>
                 <p>
                     <a href="/static/MY_CURRICULUM_VITAE.pdf" download>
-                        <button style="padding: 10px 20px; font-size: 16px; background: #2ecc71; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                            📥 Download My CV
-                        </button>
+                        <button class="cv-button">📥 Download My CV</button>
                     </a>
                 </p>
             </div>
